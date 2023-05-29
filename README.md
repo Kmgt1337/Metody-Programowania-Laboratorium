@@ -9,5 +9,5 @@ Lab 6 - reprezentacje grafu w komputerze. Macierz incydencji oraz wszyscy sąsie
 Lab 7 - funkcje rekurencyjne oraz iteracyjne wyznaczające pierwsze i ostatnie wystąpienie zadanego elementu w talbicy dwuwymiarowej gdzie każdy wiersz i każda kolumna są posrtowane niemalejąco.\
 Lab 8 - generatory liczb pseudolosowych. Liniowa metoda kongruencyjna, Addytywna metoda kongruencyjna.\
 Lab 9 - ogólny problem plecakowy za pomocą algorytmu dynamicznego.\
-Lab 10 - problem plecakowy 0-1 za pomocą algorytmu z powrotami.\ 
-Lab 11 - kodowanie Huffmana.\
+Lab 10 - problem plecakowy 0-1 za pomocą algorytmu z powrotami.   
+Lab 11 - kodowanie Huffmana.
