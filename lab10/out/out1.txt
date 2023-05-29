@@ -1,0 +1,168 @@
+Przedmioty:
+p = 40, w =  2, p/w = 20
+p = 30, w =  5, p/w = 6
+p = 50, w =  10, p/w = 5
+p = 10, w =  5, p/w = 2
+
+Przebieg algorytmu:
+
+Wezel(0, 0):
+	obecna waga = 0, obecny zysk = 0
+	sprawdzamy czy: obecna waga >= W, czyli: 0 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 0
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 7
+	i = 0, 	k = 3
+	b = 115
+	Sprawdzamy czy: bound > mp, czyli: 115 > 0
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(1, 1):
+	obecna waga = 2, obecny zysk = 40
+	sprawdzamy czy: obecna waga >= W, czyli: 2 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 40
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 7
+	i = 1, 	k = 3
+	b = 115
+	Sprawdzamy czy: bound > mp, czyli: 115 > 40
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(2, 1):
+	obecna waga = 7, obecny zysk = 70
+	sprawdzamy czy: obecna waga >= W, czyli: 7 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 70
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 7
+	i = 2, 	k = 3
+	b = 115
+	Sprawdzamy czy: bound > mp, czyli: 115 > 70
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(3, 1):
+	obecna waga = 17, obecny zysk = 120
+	sprawdzamy czy: obecna waga >= W, czyli: 17 >= 16
+		TAK wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(3, 2):
+	obecna waga = 7, obecny zysk = 70
+	sprawdzamy czy: obecna waga >= W, czyli: 7 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 70
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 12
+	i = 3, 	k = 5
+	b = 80
+	Sprawdzamy czy: bound > mp, czyli: 80 > 70
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(4, 1):
+	obecna waga = 12, obecny zysk = 80
+	sprawdzamy czy: obecna waga >= W, czyli: 12 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 80
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 12
+	i = 4, 	k = 5
+	b = 80
+	Sprawdzamy czy: bound > mp, czyli: 80 > 80
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(4, 2):
+	obecna waga = 7, obecny zysk = 70
+	sprawdzamy czy: obecna waga >= W, czyli: 7 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 80
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 7
+	i = 4, 	k = 5
+	b = 70
+	Sprawdzamy czy: bound > mp, czyli: 70 > 80
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(2, 2):
+	obecna waga = 2, obecny zysk = 40
+	sprawdzamy czy: obecna waga >= W, czyli: 2 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 80
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 12
+	i = 2, 	k = 4
+	b = 98
+	Sprawdzamy czy: bound > mp, czyli: 98 > 80
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(3, 3):
+	obecna waga = 12, obecny zysk = 90
+	sprawdzamy czy: obecna waga >= W, czyli: 12 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 90
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 12
+	i = 3, 	k = 4
+	b = 98
+	Sprawdzamy czy: bound > mp, czyli: 98 > 90
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(4, 3):
+	obecna waga = 17, obecny zysk = 100
+	sprawdzamy czy: obecna waga >= W, czyli: 17 >= 16
+		TAK wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(4, 4):
+	obecna waga = 12, obecny zysk = 90
+	sprawdzamy czy: obecna waga >= W, czyli: 12 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 90
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 12
+	i = 4, 	k = 5
+	b = 90
+	Sprawdzamy czy: bound > mp, czyli: 90 > 90
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(3, 4):
+	obecna waga = 2, obecny zysk = 40
+	sprawdzamy czy: obecna waga >= W, czyli: 2 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 90
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 7
+	i = 3, 	k = 5
+	b = 50
+	Sprawdzamy czy: bound > mp, czyli: 50 > 90
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(1, 2):
+	obecna waga = 0, obecny zysk = 0
+	sprawdzamy czy: obecna waga >= W, czyli: 0 >= 16
+	NIE wiec idziemy dalej
+	max_profit = 90
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 15
+	i = 1, 	k = 4
+	b = 82
+	Sprawdzamy czy: bound > mp, czyli: 82 > 90
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+KONIEC ALGORYTMU
+
+Odwiedzone wierzcholki:
+(0,0), p = 0, w = 0, b = 115, mp = 0
+(1,1), p = 40, w = 2, b = 115, mp = 40
+(2,1), p = 70, w = 7, b = 115, mp = 70
+(3,1), p = 120, w = 17, b = 0, mp = 70
+(3,2), p = 70, w = 7, b = 80, mp = 70
+(4,1), p = 80, w = 12, b = 80, mp = 80
+(4,2), p = 70, w = 7, b = 70, mp = 80
+(2,2), p = 40, w = 2, b = 98, mp = 80
+(3,3), p = 90, w = 12, b = 98, mp = 90
+(4,3), p = 100, w = 17, b = 0, mp = 90
+(4,4), p = 90, w = 12, b = 90, mp = 90
+(3,4), p = 40, w = 2, b = 50, mp = 90
+(1,2), p = 0, w = 0, b = 82, mp = 90
+
+Najwiekszy zysk = 90

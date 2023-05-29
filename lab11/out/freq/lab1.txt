@@ -1,0 +1,14 @@
+Kody:
+S 110
+I 10
+A 00
+Z 0110
+M 111
+B 010
+X 0111
+
+Tekst:
+$
+
+Zakodowany tekst:
+$

@@ -1,0 +1,33 @@
+Macierz incydencji (tablica dynamiczna):
+1 -1 0 0 0 
+0 1 0 -1 0 
+0 1 0 0 -1 
+-1 0 1 0 0 
+0 -1 1 0 0 
+0 0 -1 1 0 
+0 0 0 -1 1 
+-1 0 0 0 1 
+
+Macierz incydencji (std::vector):
+1 -1 0 0 0 
+0 1 0 -1 0 
+0 1 0 0 -1 
+-1 0 1 0 0 
+0 -1 1 0 0 
+0 0 -1 1 0 
+0 0 0 -1 1 
+-1 0 0 0 1 
+
+Wszyscy sasiedzi dla danego wierzcholka (tablica dynamiczna):
+1: 2 
+2: 4 5 
+3: 1 2 
+4: 3 
+5: 1 4 
+
+Wszyscy sasiedzi dla danego wierzcholka (std::vector):
+1: 2 
+2: 4 5 
+3: 1 2 
+4: 3 
+5: 1 4 

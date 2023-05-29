@@ -1,0 +1,130 @@
+Przedmioty:
+p = 40, w =  2, p/w = 20
+p = 30, w =  5, p/w = 6
+p = 50, w =  10, p/w = 5
+p = 10, w =  5, p/w = 2
+
+Przebieg algorytmu:
+
+Wezel(0, 0):
+	obecna waga = 0, obecny zysk = 0
+	sprawdzamy czy: obecna waga >= W, czyli: 0 >= 22
+	NIE wiec idziemy dalej
+	max_profit = 0
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 17
+	i = 0, 	k = 4
+	b = 130
+	Sprawdzamy czy: bound > mp, czyli: 130 > 0
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(1, 1):
+	obecna waga = 2, obecny zysk = 40
+	sprawdzamy czy: obecna waga >= W, czyli: 2 >= 22
+	NIE wiec idziemy dalej
+	max_profit = 40
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 17
+	i = 1, 	k = 4
+	b = 130
+	Sprawdzamy czy: bound > mp, czyli: 130 > 40
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(2, 1):
+	obecna waga = 7, obecny zysk = 70
+	sprawdzamy czy: obecna waga >= W, czyli: 7 >= 22
+	NIE wiec idziemy dalej
+	max_profit = 70
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 17
+	i = 2, 	k = 4
+	b = 130
+	Sprawdzamy czy: bound > mp, czyli: 130 > 70
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(3, 1):
+	obecna waga = 17, obecny zysk = 120
+	sprawdzamy czy: obecna waga >= W, czyli: 17 >= 22
+	NIE wiec idziemy dalej
+	max_profit = 120
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 17
+	i = 3, 	k = 4
+	b = 130
+	Sprawdzamy czy: bound > mp, czyli: 130 > 120
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(4, 1):
+	obecna waga = 22, obecny zysk = 130
+	sprawdzamy czy: obecna waga >= W, czyli: 22 >= 22
+	NIE wiec idziemy dalej
+	max_profit = 130
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 22
+	i = 4, 	k = 4
+	b = 130
+	Sprawdzamy czy: bound > mp, czyli: 130 > 130
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(4, 2):
+	obecna waga = 17, obecny zysk = 120
+	sprawdzamy czy: obecna waga >= W, czyli: 17 >= 22
+	NIE wiec idziemy dalej
+	max_profit = 130
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 17
+	i = 4, 	k = 5
+	b = 120
+	Sprawdzamy czy: bound > mp, czyli: 120 > 130
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(3, 2):
+	obecna waga = 7, obecny zysk = 70
+	sprawdzamy czy: obecna waga >= W, czyli: 7 >= 22
+	NIE wiec idziemy dalej
+	max_profit = 130
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 12
+	i = 3, 	k = 5
+	b = 80
+	Sprawdzamy czy: bound > mp, czyli: 80 > 130
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(2, 2):
+	obecna waga = 2, obecny zysk = 40
+	sprawdzamy czy: obecna waga >= W, czyli: 2 >= 22
+	NIE wiec idziemy dalej
+	max_profit = 130
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 17
+	i = 2, 	k = 5
+	b = 100
+	Sprawdzamy czy: bound > mp, czyli: 100 > 130
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(1, 2):
+	obecna waga = 0, obecny zysk = 0
+	sprawdzamy czy: obecna waga >= W, czyli: 0 >= 22
+	NIE wiec idziemy dalej
+	max_profit = 130
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 20
+	i = 1, 	k = 5
+	b = 90
+	Sprawdzamy czy: bound > mp, czyli: 90 > 130
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+KONIEC ALGORYTMU
+
+Odwiedzone wierzcholki:
+(0,0), p = 0, w = 0, b = 130, mp = 0
+(1,1), p = 40, w = 2, b = 130, mp = 40
+(2,1), p = 70, w = 7, b = 130, mp = 70
+(3,1), p = 120, w = 17, b = 130, mp = 120
+(4,1), p = 130, w = 22, b = 130, mp = 130
+(4,2), p = 120, w = 17, b = 120, mp = 130
+(3,2), p = 70, w = 7, b = 80, mp = 130
+(2,2), p = 40, w = 2, b = 100, mp = 130
+(1,2), p = 0, w = 0, b = 90, mp = 130
+
+Najwiekszy zysk = 130

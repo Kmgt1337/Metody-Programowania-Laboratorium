@@ -1,0 +1,15 @@
+RekPier: 20 w (0,1)
+RekOst: 20 w (1,2)
+IterPier: 20 w (0,1)
+IterOst: 20 w (1,2)
+---
+RekPier: 60 w (2,0)
+RekOst: 60 w (2,2)
+IterPier: 60 w (2,0)
+IterOst: 60 w (2,2)
+---
+RekPier: 70 w (2,3)
+RekOst: 70 w (2,3)
+IterPier: 70 w (2,3)
+IterOst: 70 w (2,3)
+---

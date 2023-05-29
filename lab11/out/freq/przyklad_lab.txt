@@ -1,0 +1,13 @@
+Kody:
+e 1111
+b 1110
+a 00
+f 10
+d 01
+c 110
+
+Tekst:
+$
+
+Zakodowany tekst:
+$

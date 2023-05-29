@@ -1,0 +1,14 @@
+Kody:
+s 110
+x 101
+i 111
+t 000
+e 01
+a 001
+r 100
+
+Tekst:
+$
+
+Zakodowany tekst:
+$

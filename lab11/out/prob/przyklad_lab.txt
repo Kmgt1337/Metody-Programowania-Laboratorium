@@ -1,0 +1,12 @@
+Kody:
+A 11
+C 00
+B 01
+E 100
+D 101
+
+Tekst:
+$
+
+Zakodowany tekst:
+$

@@ -1,0 +1,8 @@
+cd 'C:\Users\kmgtp\source\MP\lab2\wizualizacja'
+set key left top
+set key font ',20'
+set xlabel 'X(t)' font ',15'
+set ylabel 'Y(t)' font ',15'
+set terminal pngcairo size 1900,1080
+set output 'wykres_SEB.png'
+plot "dane_silnika_SEB.txt" title 'Model w siatce identyfikacyjnej' smooth bezier lc rgb 'blue lw 10', "dane_nieznanego_SEB.txt" title 'Nieznany model silnika' smooth bezier lc rgb 'red lw 10'

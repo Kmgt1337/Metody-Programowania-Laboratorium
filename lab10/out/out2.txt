@@ -1,0 +1,157 @@
+Przedmioty:
+p = 20, w =  2, p/w = 10
+p = 30, w =  5, p/w = 6
+p = 35, w =  7, p/w = 5
+p = 12, w =  3, p/w = 4
+p = 3, w =  1, p/w = 3
+
+Przebieg algorytmu:
+
+Wezel(0, 0):
+	obecna waga = 0, obecny zysk = 0
+	sprawdzamy czy: obecna waga >= W, czyli: 0 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 0
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 18
+	i = 0, 	k = 6
+	b = 100
+	Sprawdzamy czy: bound > mp, czyli: 100 > 0
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(1, 1):
+	obecna waga = 2, obecny zysk = 20
+	sprawdzamy czy: obecna waga >= W, czyli: 2 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 20
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 18
+	i = 1, 	k = 6
+	b = 100
+	Sprawdzamy czy: bound > mp, czyli: 100 > 20
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(2, 1):
+	obecna waga = 7, obecny zysk = 50
+	sprawdzamy czy: obecna waga >= W, czyli: 7 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 50
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 18
+	i = 2, 	k = 6
+	b = 100
+	Sprawdzamy czy: bound > mp, czyli: 100 > 50
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(3, 1):
+	obecna waga = 14, obecny zysk = 85
+	sprawdzamy czy: obecna waga >= W, czyli: 14 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 85
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 18
+	i = 3, 	k = 6
+	b = 100
+	Sprawdzamy czy: bound > mp, czyli: 100 > 85
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(4, 1):
+	obecna waga = 17, obecny zysk = 97
+	sprawdzamy czy: obecna waga >= W, czyli: 17 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 97
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 18
+	i = 4, 	k = 6
+	b = 100
+	Sprawdzamy czy: bound > mp, czyli: 100 > 97
+	TAK wiec idziemy w wezel po lewej
+
+Wezel(5, 1):
+	obecna waga = 18, obecny zysk = 100
+	sprawdzamy czy: obecna waga >= W, czyli: 18 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 100
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 18
+	i = 5, 	k = 6
+	b = 100
+	Sprawdzamy czy: bound > mp, czyli: 100 > 100
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(5, 2):
+	obecna waga = 17, obecny zysk = 97
+	sprawdzamy czy: obecna waga >= W, czyli: 17 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 100
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 17
+	i = 5, 	k = 6
+	b = 97
+	Sprawdzamy czy: bound > mp, czyli: 97 > 100
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(4, 2):
+	obecna waga = 14, obecny zysk = 85
+	sprawdzamy czy: obecna waga >= W, czyli: 14 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 100
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 15
+	i = 4, 	k = 6
+	b = 88
+	Sprawdzamy czy: bound > mp, czyli: 88 > 100
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(3, 2):
+	obecna waga = 7, obecny zysk = 50
+	sprawdzamy czy: obecna waga >= W, czyli: 7 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 100
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 11
+	i = 3, 	k = 6
+	b = 65
+	Sprawdzamy czy: bound > mp, czyli: 65 > 100
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(2, 2):
+	obecna waga = 2, obecny zysk = 20
+	sprawdzamy czy: obecna waga >= W, czyli: 2 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 100
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 13
+	i = 2, 	k = 6
+	b = 70
+	Sprawdzamy czy: bound > mp, czyli: 70 > 100
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+Wezel(1, 2):
+	obecna waga = 0, obecny zysk = 0
+	sprawdzamy czy: obecna waga >= W, czyli: 0 >= 19
+	NIE wiec idziemy dalej
+	max_profit = 100
+	Sprawdzamy teraz zalozenia z bound:
+	totweight = 16
+	i = 1, 	k = 6
+	b = 80
+	Sprawdzamy czy: bound > mp, czyli: 80 > 100
+		NIE wiec wezel jest NIEOBIECUJACY. Cofamy sie do rodzica i idziemy w prawo
+
+KONIEC ALGORYTMU
+
+Odwiedzone wierzcholki:
+(0,0), p = 0, w = 0, b = 100, mp = 0
+(1,1), p = 20, w = 2, b = 100, mp = 20
+(2,1), p = 50, w = 7, b = 100, mp = 50
+(3,1), p = 85, w = 14, b = 100, mp = 85
+(4,1), p = 97, w = 17, b = 100, mp = 97
+(5,1), p = 100, w = 18, b = 100, mp = 100
+(5,2), p = 97, w = 17, b = 97, mp = 100
+(4,2), p = 85, w = 14, b = 88, mp = 100
+(3,2), p = 50, w = 7, b = 65, mp = 100
+(2,2), p = 20, w = 2, b = 70, mp = 100
+(1,2), p = 0, w = 0, b = 80, mp = 100
+
+Najwiekszy zysk = 100
